@@ -1,0 +1,160 @@
+.navbar {
+  box-shadow: 0 0 15px #8e8e8e;
+
+  .navbar-brand {
+    margin-top: -.5rem;
+    margin-bottom: -.5rem;
+    .img-fluid {
+      max-height: 56px;
+      width: auto;
+      transition: transform .3s ease;
+      transform-origin: left bottom;
+      transform: scale(1.8);
+      @media screen and (min-width: 375px) {
+        transform: scale(2.3);
+      }
+
+    }
+    &.not-on-top {
+      .img-fluid {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+#wrapper-static-content {
+  .static-hero-widget {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+    padding-top: $spacer;
+  }
+}
+
+.hapje-row {
+  display: flex;
+}
+
+.hapje-row-img {
+  display: block;
+  min-height: 90px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.entry-title {
+  color: $gray-800;
+  a {
+    color: $gray-800;
+  }
+}
+
+article {
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
+  border-bottom: 1px solid #eceeef;
+}
+
+.entry-header {
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
+}
+
+.wp-post-image {
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
+  border-bottom: 1px solid #eceeef;
+}
+
+.wrapper {
+  padding: 0;
+}
+
+#content {
+  padding-top: $spacer*2;
+  padding-bottom: $spacer*2;
+  background-color: #fff;
+  aside.widget {
+    border: 1px solid #eceeef;
+    padding: $spacer;
+    margin-bottom: $spacer;
+    background-color: #f7f7f9;
+    position: relative;
+
+    .widget-title {
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+}
+
+.bg-dark {
+  a {
+    color: $gray-500;
+  }
+}
+
+.restaurant-thumbnail {
+  padding-bottom: 40%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.restaurant-thumbnail-container {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eceeef;
+}
+
+.restaurant-list {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    a {
+      display: block;
+      padding: $spacer/2;
+      &:hover {
+        background: rgba(255, 255, 255, .5);
+      }
+    }
+  }
+}
+
+table.restaurant {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $spacer;
+  background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+  display: block;
+  overflow-x: auto;
+  border: 1px solid #ff9933;
+  font-size: .9rem;
+  th,
+  td {
+    padding: $table-cell-padding/2;
+    vertical-align: top;
+  }
+  th {
+    background-color: #ff9966;
+  }
+  td {
+    border-top: $table-border-width solid #ff9933;
+  }
+  tr:nth-child(odd) {
+    td {
+      background: #ffe0c1;
+    }
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * $table-border-width) solid $table-border-color;
+  }
+
+  tbody + tbody {
+    border-top: (2 * $table-border-width) solid $table-border-color;
+  }
+}
